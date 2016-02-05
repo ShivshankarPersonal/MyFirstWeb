@@ -1,0 +1,183 @@
+/* nanoscrollbar */
+.nano .pane   { background: #888; }
+.nano .slider { background: #111; }
+
+body {
+    /* Override bootstrap properties */
+    background-color: #374a5d !important;
+    border: 0 !important;
+}
+
+#container{
+    margin: 0 auto;
+    width: 1360px;
+    min-height: 100%;
+    background-color: transparent;
+    border: 0;
+}
+
+#header{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.task-list{
+    width: 250px;
+    float: left;
+    margin: 0 5px;
+    background-color: red;
+    min-height: 240px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.task-list taskform{
+    width: 550px;
+    float: left;
+    margin: 0 5px;
+    background-color: red;
+    min-height: 240px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.task-list input, .task-list textarea{
+    width: 240px;
+    margin: 1px 5px;
+    background-color: green;
+    color: blue;
+}
+
+.task-list input{
+    height: 30px;
+    color: blue;
+}
+
+.todo-task{
+    border-radius: 5px;
+    background-color: #fff;
+    width: 230px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.task-list input[type="button"]{
+    width: 100px;
+    margin: 5px;
+
+}
+
+.todo-task > .task-header{
+    font-weight: bold;
+    color: blue;
+}
+
+.todo-task > .task-date{
+    font-size: small;
+    font-style: italic;
+    color: blue;
+}
+
+.todo-task > .task-description{
+    font-size: smaller;
+    color: blue;
+}
+
+h3{
+    text-align: center;
+}
+
+#delete-div{
+    display: none;
+    background-color: #fff;
+    border: 3px dotted #000;
+    margin: 10px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+}
+
+#pending{
+    background-color: green;
+    }
+#inProgress{
+    background-color:red;
+    }
+#completed{
+    background-color:yellow;
+}
+
+.badge1 {
+    position:relative;
+    left: 221px;
+    top: -46px;
+}
+.badge1[pendingCount]:after {
+    content:attr(pendingCount);
+    position:absolute;
+    top:-10px;
+    right:-3px;
+    font-size:.7em;
+    background:green;
+    color:white;
+    width:18px;height:18px;
+    text-align:center;
+    line-height:18px;
+    border-radius:50%;
+    box-shadow:0 0 1px #333;
+}
+
+.badge1[inprogressCount]:after {
+    content: attr(inprogressCount);
+    position: absolute;
+    top: -10px;
+    right: -3px;
+    font-size: .7em;
+    background: green;
+    color: white;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
+}
+
+.badge1[completedCount]:after {
+    content: attr(completedCount);
+    position: absolute;
+    top: -10px;
+    right: -3px;
+    font-size: .7em;
+    background: green;
+    color: white;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
+}
+
+.badge1[totalCount]:after {
+    content: attr(totalCount);
+    position: absolute;
+    top: -10px;
+    right: -3px;
+    font-size: .7em;
+    background: green;
+    color: white;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
+}
+input.radio{
+    height: 13px;
+    width: 18px;
+}
+
